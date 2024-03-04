@@ -1,0 +1,25 @@
+antlr4 NombreDelArchivo.g4    -> Generate parser and lexer using antlr4 alias from before
+javac *.java                  -> Compile todos los .java ANTLR-generated code
+grun NombreDelArhivo primeraRegla -tokens        -> Start the TestRig on grammar Hello at rule r
+     *abre terminal*: escribes lo que quieras: cierras con Cntrl+D, y te debe devolver los tokens, el id, la fila-columna..todo
+grun NombreDelArhivo primeraRegla -tree
+     *abre terminal*: escribes lo que quieras: cierras con Cntrl+D, y te debe escribir las palabras
+grun NombreDelArhivo primeraRegla -gui
+     *abre terminal*: escribes lo que quieras: cierras con Cntrl+D, y te abre interfaz
+grun NombreDelArhivo primeraRegla -LaOpcionQueQuierasTreeGui NombreDelQueCompruebe.loquequieras
+     ejecuta el .archivoQueQuieresprobar
+     
+PARA SEGUIR EN LA TEMRINAL LUEGO DEL -GUI TENGO QUE CERRAR LA INTERFAZ
+
+grun
+     *te muestra todas las opciones que puedes hacer
+     
+cat archivo : te muestra lo q tiene el arcvhivo
+
+
+Ahora, con visitors: que funcione en si el arbol, que lo haga
+
+antlr4 -no-listener -visitor nombreArchivo.g4
+Para compilar si los archivos tienen diferentes nombres:  javac nombreArchivo.java nombresArchivos*.java , o javac *.java   
+java nombredelarchivoJavaQueLlamaAlVisitor archivoQueQuieroCorrer
+
